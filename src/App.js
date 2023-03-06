@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Flex, VStack, Center } from '@chakra-ui/react';
+import './App.css';
+import { Box, Flex, VStack, Center, Text } from '@chakra-ui/react';
 import Results from './components/Results';
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
           </Center>
         </Box>
         <Box>
-          <h1>Hello world</h1>
+          <Text fontWeight="1st" as="h1">
+            Testing fonts configuration
+          </Text>
         </Box>
       </Flex>
     </Box>

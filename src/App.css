@@ -1,28 +1,5 @@
-/* For now no theme */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: Bold;
-  src: url('./assets/fonts/HankenGrotesk-Bold.ttf');
-}
-
-@font-face {
-  font-family: ExtraBold;
-  src: url('./assets/fonts/HankenGrotesk-ExtraBold.ttf');
-}
-
-@font-face {
-  font-family: Medium;
-  src: url('./assets/fonts/HankenGrotesk-Medium.ttf');
-}
-
 :root {
-  /* background in button */
+  /* button list background  */
   --light-red: hsl(0, 100%, 67%);
   --orange-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
@@ -32,7 +9,7 @@
   --royal-blue-gradient-background: hsl(241, 81%, 54%);
   --violet-blue-gradient-circle: hsla(256, 72%, 46%, 1);
   --persian-blue-gradient-circle: hsla(241, 72%, 46%, 0);
-  /* normal color */
+  /* text colors */
   --neutral-color: hsl(0, 0%, 100%);
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
@@ -41,7 +18,3 @@
 
 /* - Mobile: 375px
 - Desktop: 1440px */
-
-body {
-  font-size: 18px;
-}
