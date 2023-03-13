@@ -4,7 +4,7 @@ import { Box, Text, Circle, VStack, Flex } from '@chakra-ui/react';
 const Results = () => {
   return (
     <Box
-      h="45%"
+      h="47%"
       paddingTop="1.2rem"
       paddingBottom="1.2rem"
       borderBottomRadius="25px"
@@ -16,8 +16,8 @@ const Results = () => {
         </Text>
         <Circle
           bgGradient="linear(to-b, violet-blue-gradient-circle, persian-blue-gradient-circle)"
-          size="8.5rem"
-          marginTop="1.5rem"
+          size="8rem"
+          marginTop="1rem"
         >
           <VStack spacing="0px">
             <Text

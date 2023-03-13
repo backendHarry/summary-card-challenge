@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Box, HStack, Icon, Text } from '@chakra-ui/react';
+import React from 'react';
+import { Flex, HStack, Icon, Text } from '@chakra-ui/react';
 import {
   MemoryIcon,
   ReactionIcon,
@@ -10,40 +10,63 @@ import {
 export const SummaryList = props => {
   const { icon, children, ...rest } = props;
   return (
-    <HStack as="li" {...rest}>
-      <Icon as={icon} w={22} h={22} />
-      <Text>{children}</Text>
-    </HStack>
+    <Flex as="li" w="100%" align="center" justify="space-between" {...rest}>
+      <HStack spacing={4}>
+        <Icon as={icon} w={22} h={22} />
+        <Text>{children}</Text>
+      </HStack>
+      <Text color="dark-gray-blue">
+        82 /
+        <Text display="inline-flex" textIndent="4px" opacity=".5">
+          100
+        </Text>
+      </Text>
+    </Flex>
   );
 };
 
 const Summary = () => {
   const summaryList = [
     {
-      category: 'Memory',
+      category: 'Reaction',
       score: 92,
-      icon: MemoryIcon,
+      icon: ReactionIcon,
+      color: 'light-red',
     },
     {
-      category: 'Reaction',
+      category: 'Memory',
       score: 80,
-      icon: ReactionIcon,
+      icon: MemoryIcon,
+      color: 'orange-yellow',
     },
     {
       category: 'Verbal',
       score: 61,
       icon: VerbalIcon,
+      color: 'green-teal',
     },
     {
       category: 'Visual',
       score: 72,
       icon: VisualIcon,
+      color: 'cobalt-blue',
     },
   ];
   return (
     <>
-      {summaryList.map(({ category, icon }) => (
-        <SummaryList icon={icon}>{category}</SummaryList>
+      {summaryList.map(({ category, icon, color }) => (
+        <SummaryList
+          icon={icon}
+          color={color}
+          bgColor={`${color}-background`}
+          p=".8rem"
+          borderRadius="10px"
+          mb=".8rem"
+          fontSize="1rem"
+          fontWeight="2nd"
+        >
+          {category}
+        </SummaryList>
       ))}
     </>
   );
