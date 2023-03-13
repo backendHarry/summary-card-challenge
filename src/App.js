@@ -12,16 +12,10 @@ function App() {
         h={['100%', '50%']}
         flexDir="column"
       >
-        <Box>
-          <Center>
-            <h1>Hellow worldww</h1>
-          </Center>
-        </Box>
-        <Box>
-          <Text fontWeight="1st" as="h1">
-            Testing fonts configuration
-          </Text>
-        </Box>
+        <Results />
+        <Text fontWeight="1st" as="h1">
+          Testing fonts configuration
+        </Text>
       </Flex>
     </Box>
   );
