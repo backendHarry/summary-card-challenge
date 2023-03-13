@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import { Box, Flex, VStack, Center, Text } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import Results from './components/Results';
+import Summary from './components/Summary';
 
 function App() {
   return (
@@ -13,9 +14,14 @@ function App() {
         flexDir="column"
       >
         <Results />
-        <Text fontWeight="1st" as="h1">
-          Testing fonts configuration
-        </Text>
+        <Box h="100%">
+          <Box w="80%" margin="1.2rem auto">
+            <Text color="dark-gray-blue" fontWeight="2nd">
+              Summary
+            </Text>
+            <Summary />
+          </Box>
+        </Box>
       </Flex>
     </Box>
   );

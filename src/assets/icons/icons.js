@@ -1,9 +1,10 @@
 import { React } from 'react';
 
-export const MemoryIcon = () => {
+export const MemoryIcon = props => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
       width="20"
       height="20"
       fill="none"
@@ -34,13 +35,14 @@ export const MemoryIcon = () => {
   );
 };
 
-export const ReactionIcon = () => {
+export const ReactionIcon = props => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       fill="none"
+      {...props}
       viewBox="0 0 20 20"
     >
       <path
@@ -54,13 +56,14 @@ export const ReactionIcon = () => {
   );
 };
 
-export const VerbalIcon = () => {
+export const VerbalIcon = props => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       fill="none"
+      {...props}
       viewBox="0 0 20 20"
     >
       <path
@@ -74,13 +77,14 @@ export const VerbalIcon = () => {
   );
 };
 
-export const VisualIcon = () => {
+export const VisualIcon = props => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       fill="none"
+      {...props}
       viewBox="0 0 20 20"
     >
       <path
