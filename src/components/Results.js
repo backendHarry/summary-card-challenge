@@ -1,14 +1,11 @@
 import { React } from 'react';
 import { Box, Text, Circle, VStack, Flex } from '@chakra-ui/react';
 
-const Results = () => {
+const Results = props => {
   return (
     <Box
-      h="47%"
-      paddingTop="1.2rem"
-      paddingBottom="1.2rem"
-      borderBottomRadius="25px"
       bgGradient="linear(to-b, slate-blue-gradient-background, royal-blue-gradient-background)"
+      {...props}
     >
       <Flex h="100%" align="center" direction="column" color="light-lavender">
         <Text fontWeight="1st" fontSize="1.2rem">
@@ -16,7 +13,7 @@ const Results = () => {
         </Text>
         <Circle
           bgGradient="linear(to-b, violet-blue-gradient-circle, persian-blue-gradient-circle)"
-          size="8rem"
+          size={['8rem', '11rem']}
           marginTop="1rem"
         >
           <VStack spacing="0px">
