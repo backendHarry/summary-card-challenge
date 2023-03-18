@@ -10,6 +10,7 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [How to install Project](#install-project)
   - [Built with](#built-with)
   - [Building Process](#building-process)
   - [Continued development](#continued-development)
@@ -51,6 +52,23 @@ These are snapshots and original images of the project built, the one labelled w
 - Live Site URL: [Comming soon!](https://your-live-site-url.com)
 
 ## My process
+
+### How to install Project
+
+To get started with the project,
+
+1. First First open your terminal (a linux based terminal or MacOS),
+2. clone the project and
+3. cd into the directory
+4. install dependencies, make sure you have node and npm installed.
+5. Run development server
+
+```Bash
+  git clone https://github.com/backendHarry/...
+  cd 'summary card chakra'
+  npm install
+  npm run start
+```
 
 ### Built with
 
