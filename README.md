@@ -10,7 +10,7 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [How to install Project](#install-project)
+  - [How to Get started](#iHow-to-Get-started)
   - [Built with](#built-with)
   - [Building Process](#building-process)
   - [Continued development](#continued-development)
@@ -53,7 +53,7 @@ These are snapshots and original images of the project built, the one labelled w
 
 ## My process
 
-### How to install Project
+### How to Get started
 
 To get started with the project,
 
